@@ -18,7 +18,7 @@
     firstTout.classList.add('active');
     secondTout.classList.add('active');
   }
-  window.addEventListener('scroll', debounce(() => {
+  window.addEventListener('scroll', debounce(function() {
     secondSectionDimensions = secondSection.getBoundingClientRect();
     if (previousScrollY < window.scrollY) {
       sunriseImage.classList.remove('animate-down');
