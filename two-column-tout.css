@@ -47,11 +47,15 @@
 }
 
 .two-column-tout__columns > div {
-  display: flex;
-  flex-direction: column;
+  float: left;
+  text-align: center;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 2.5rem;
+}
+
+.two-column-tout__columns h2 + p {
+  text-align: left;
 }
 
 .two-column-tout__columns--maroon > div:first-child {
