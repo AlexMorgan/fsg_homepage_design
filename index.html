@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./two-column-tout.css">
     <link type="text/css" rel="stylesheet" href="https://fast.fonts.net/cssapi/bdcacd74-7156-4c14-b08d-d53c6f674ed7.css">
   </head>
-  <body>
+  <body id="content ie">
     <main>
       <section class="first-section" id="sunrise-container">
         <div class="first-section-content">
@@ -168,4 +168,19 @@
     </main>
   </body>
   <script type="text/javascript" src="./index.js"></script>
+
+  <script>
+    function addBodyClass() {
+      var el = document.getElementById("content");
+      el.className += " ie";
+
+      var firstTout = document.getElementById('first-tout'),
+          secondTout = document.getElementById('second-tout');
+
+          firstTout.className += " active";
+          secondTout.className += " active";
+    }
+
+      "ActiveXObject" in window ? addBodyClass() : console.log('not IE');
+  </script>
 </html>
