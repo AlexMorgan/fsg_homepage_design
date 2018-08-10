@@ -3,10 +3,7 @@
     let timeout = null;
     return function() {
       window.clearTimeout(timeout);
-      timeout = setTimeout(() => {
-        fn();
-      })
-      setTimeout(fn);
+      timeout = setTimeout(fn);
     }
   }
   let previousScrollY = 0;
