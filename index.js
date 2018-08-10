@@ -6,6 +6,7 @@
       timeout = setTimeout(() => {
         fn();
       })
+      setTimeout(fn);
     }
   }
   let previousScrollY = 0;
